@@ -24,6 +24,7 @@ class MGNetworkManager: NSObject {
         return Singleton.single!
     }
     
+//------------ // 使用OC中的block进行GET和POST请求\\ ----------------\\
     /**
      *   GET请求通过Block 回调结果
      *
@@ -38,7 +39,7 @@ class MGNetworkManager: NSObject {
                           successBlock:MGNetworkSuccessBlock,
                           failureBlock:MGNetworkFailureBlock,
                           showHUD:Bool) {
-        MGNetworkManager.getRequstWithURLSharing(url, paramsDict: paramsDict, successBlock: successBlock, failureBlock: failureBlock, showHUD: showHUD)
+        MGNetworkManager.getRequstWithURLSharing(url, paramsDict: paramsDict, delegate: nil,successBlock: successBlock, failureBlock: failureBlock, showHUD: showHUD)
     }
     
     /**
@@ -56,7 +57,7 @@ class MGNetworkManager: NSObject {
                                   failureBlock:MGNetworkFailureBlock,
                                   showHUD:Bool){
        
-        MGNetworkManager.postReqeustWithSharing(url, params: params!, successBlock: successBlock, failureBlock: failureBlock, showHUD: showHUD)
+        MGNetworkManager.postReqeustWithSharing(url, params: params!, delegate: nil, successBlock: successBlock, failureBlock: failureBlock, showHUD: showHUD)
     }
     
     /**
@@ -86,11 +87,12 @@ class MGNetworkManager: NSObject {
      */
     class func getRequstWithURLSharing(url:String,
                                        paramsDict:[String:AnyObject]?,
-                                       successBlock:MGNetworkSuccessBlock,
-                                       failureBlock:MGNetworkFailureBlock,
+                                       delegate:MGNetworkDelegate?,
+                                       successBlock:MGNetworkSuccessBlock?,
+                                       failureBlock:MGNetworkFailureBlock?,
                                        showHUD:Bool){
         
-        MGNetworkHandler.shareMGNetworkHandler().conURL(url, networkType: MGAsiNetWorkType.requestTypeGet, params: paramsDict, showHUD: showHUD, successBlock: successBlock, failureBlock: failureBlock)
+        MGNetworkHandler.shareMGNetworkHandler().conURL(url, networkType: MGAsiNetWorkType.requestTypeGet, params: paramsDict, showHUD: showHUD,delegate:delegate , successBlock: successBlock, failureBlock: failureBlock)
     }
     
     /**
@@ -107,10 +109,44 @@ class MGNetworkManager: NSObject {
      */
     class func postReqeustWithSharing(url:String,
                                       params:[String:AnyObject]?,
-                                      successBlock:MGNetworkSuccessBlock,
-                                      failureBlock:MGNetworkFailureBlock,
+                                      delegate:MGNetworkDelegate?,
+                                      successBlock:MGNetworkSuccessBlock?,
+                                      failureBlock:MGNetworkFailureBlock?,
                                       showHUD:Bool) {
        
-        MGNetworkHandler.shareMGNetworkHandler().conURL(url, networkType: MGAsiNetWorkType.requestTypePost, params: params, showHUD: showHUD, successBlock: successBlock, failureBlock: failureBlock)
+        MGNetworkHandler.shareMGNetworkHandler().conURL(url, networkType: MGAsiNetWorkType.requestTypePost, params: params, showHUD: showHUD, delegate: delegate,successBlock: successBlock, failureBlock: failureBlock)
     }
+    
+//------------ // 使用Delegate进行GET和POST请求\\ ----------------\\
+    /**
+     *   GET请求通过代理回调
+     *
+     *   @param url         url
+     *   @param paramsDict  请求的参数
+     *   @param delegate    delegate
+     *   @param showHUD    是否转圈圈
+     */
+    class func getRequstWithURL(url:String,
+                                paramsDict:[String:AnyObject]?,
+                                delegate:MGNetworkDelegate?,
+                                showHUD:Bool) {
+        MGNetworkManager.getRequstWithURLSharing(url, paramsDict: paramsDict, delegate: delegate, successBlock: nil, failureBlock: nil, showHUD: showHUD)
+    }
+    
+    /**
+     *   post请求通过代理回调
+     *
+     *   @param url         url
+     *   @param paramsDict  请求的参数
+     *   @param delegate    delegate
+     *   @param showHUD    是否转圈圈
+     */
+    class func postReqeustWithURL(url:String,
+                                  paramsDict:[String:AnyObject]?,
+                                  delegate:MGNetworkDelegate?,
+                                  showHUD:Bool){
+        
+        MGNetworkManager.postReqeustWithSharing(url, params: paramsDict, delegate: delegate, successBlock: nil, failureBlock: nil, showHUD: showHUD)
+    }
+
 }

@@ -12,7 +12,8 @@ class NetworkAPI: NSObject {
     
     class func loadTouTiaoInfo(type:String,
                          success:MGNetworkSuccessBlock,
-                         faile:MGNetworkFailureBlock) {
+                         faile:MGNetworkFailureBlock,
+                         showHUD:Bool) {
         
         let PATH = BASE_URL + "toutiao/index"
         let params = ["key":"bfc1f26a82392a9c99a5718cb194fc48",
@@ -22,6 +23,16 @@ class NetworkAPI: NSObject {
             success(JSON)
             }, failureBlock: { (NSError) in
                 faile(NSError)
-            }, showHUD: true)
+            }, showHUD: showHUD)
+    }
+    
+    class func loadTouTiaoInfo(type:String,
+                               delegate:MGNetworkDelegate,
+                               showHUD:Bool) {
+        
+        let PATH = BASE_URL + "toutiao/index"
+        let params = ["key":"bfc1f26a82392a9c99a5718cb194fc48",
+                      "type":type]
+        MGNetworkManager.getRequstWithURL(PATH, paramsDict: params, delegate: delegate, showHUD: showHUD)
     }
 }

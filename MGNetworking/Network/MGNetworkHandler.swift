@@ -64,6 +64,7 @@ class MGNetworkHandler: NSObject{
                 networkType:MGAsiNetWorkType,
                 params:[String:AnyObject]?,
                 showHUD:Bool,
+                delegate:MGNetworkDelegate?,
                 successBlock:MGNetworkSuccessBlock?,
                 failureBlock:MGNetworkFailureBlock?) -> MGNetworkItem? {
         if networkError {
@@ -77,12 +78,12 @@ class MGNetworkHandler: NSObject{
         }
         
         netWorkItem = MGNetworkItem()
-        netWorkItem!.requestWithtype(networkType, URLString: url, params: params!, showHUD: showHUD, successBlock: { (JSON) in
+        netWorkItem!.requestWithtype(networkType, URLString: url, params: params!, showHUD: showHUD,delegate: delegate, successBlock: { (JSON) in
             
-            successBlock!(JSON)
+            successBlock?(JSON)
             
             }) { (NSError) in
-                failureBlock!(NSError)
+                failureBlock?(NSError)
         }
         
         items.append(netWorkItem!)
