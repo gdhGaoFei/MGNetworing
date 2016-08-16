@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62B0D8BB6108D54BA76EDA94 /* Pods_MGNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666E6340D5E2199184248BF7 /* Pods_MGNetworking.framework */; };
+		A6C68FDC1D629AB900100D3E /* MGNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C68FDB1D629AB900100D3E /* MGNetworkHandler.swift */; };
+		A6C68FDE1D62AA4200100D3E /* MGNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C68FDD1D62AA4200100D3E /* MGNetworkManager.swift */; };
 		A6FB79F31D61C70A00042CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB79F21D61C70A00042CC0 /* AppDelegate.swift */; };
 		A6FB79F51D61C70A00042CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB79F41D61C70A00042CC0 /* ViewController.swift */; };
 		A6FB79F81D61C70A00042CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB79F61D61C70A00042CC0 /* Main.storyboard */; };
@@ -14,6 +17,10 @@
 		A6FB79FD1D61C70A00042CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB79FB1D61C70A00042CC0 /* LaunchScreen.storyboard */; };
 		A6FB7A081D61C70A00042CC0 /* MGNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB7A071D61C70A00042CC0 /* MGNetworkingTests.swift */; };
 		A6FB7A131D61C70B00042CC0 /* MGNetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB7A121D61C70B00042CC0 /* MGNetworkingUITests.swift */; };
+		A6FB7A221D61C97500042CC0 /* MGNetworkConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB7A211D61C97500042CC0 /* MGNetworkConst.swift */; };
+		A6FBA8671D61E69B00C8254C /* MGNetworkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBA8661D61E69B00C8254C /* MGNetworkUrl.swift */; };
+		A6FBA8691D61E6D600C8254C /* MGNetworkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBA8681D61E6D600C8254C /* MGNetworkItem.swift */; };
+		A6FBA86B1D61F6C000C8254C /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBA86A1D61F6C000C8254C /* NetworkAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BA5BFA1C2234F66F569B149 /* Pods-MGNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGNetworking/Pods-MGNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		666E6340D5E2199184248BF7 /* Pods_MGNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C68FDB1D629AB900100D3E /* MGNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNetworkHandler.swift; sourceTree = "<group>"; };
+		A6C68FDD1D62AA4200100D3E /* MGNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNetworkManager.swift; sourceTree = "<group>"; };
 		A6FB79EF1D61C70A00042CC0 /* MGNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB79F21D61C70A00042CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FB79F41D61C70A00042CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,11 @@
 		A6FB7A0E1D61C70B00042CC0 /* MGNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB7A121D61C70B00042CC0 /* MGNetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGNetworkingUITests.swift; sourceTree = "<group>"; };
 		A6FB7A141D61C70B00042CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FB7A211D61C97500042CC0 /* MGNetworkConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNetworkConst.swift; sourceTree = "<group>"; };
+		A6FBA8661D61E69B00C8254C /* MGNetworkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNetworkUrl.swift; sourceTree = "<group>"; };
+		A6FBA8681D61E6D600C8254C /* MGNetworkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNetworkItem.swift; sourceTree = "<group>"; };
+		A6FBA86A1D61F6C000C8254C /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkAPI.swift; path = MGNetworking/NetworkAPI.swift; sourceTree = SOURCE_ROOT; };
+		F78C72E8DA41A60FF2183A46 /* Pods-MGNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGNetworking/Pods-MGNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B0D8BB6108D54BA76EDA94 /* Pods_MGNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C548162C602E758B0763F53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666E6340D5E2199184248BF7 /* Pods_MGNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F8A5140F83AD30C7B57F39A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F78C72E8DA41A60FF2183A46 /* Pods-MGNetworking.debug.xcconfig */,
+				4BA5BFA1C2234F66F569B149 /* Pods-MGNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6FB79E61D61C70A00042CC0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,8 @@
 				A6FB7A061D61C70A00042CC0 /* MGNetworkingTests */,
 				A6FB7A111D61C70B00042CC0 /* MGNetworkingUITests */,
 				A6FB79F01D61C70A00042CC0 /* Products */,
+				9F8A5140F83AD30C7B57F39A /* Pods */,
+				9C548162C602E758B0763F53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +133,8 @@
 		A6FB79F11D61C70A00042CC0 /* MGNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				A6FB7A201D61C87B00042CC0 /* Network */,
+				A6FBA86A1D61F6C000C8254C /* NetworkAPI.swift */,
 				A6FB79F21D61C70A00042CC0 /* AppDelegate.swift */,
 				A6FB79F41D61C70A00042CC0 /* ViewController.swift */,
 				A6FB79F61D61C70A00042CC0 /* Main.storyboard */,
@@ -125,6 +163,18 @@
 			path = MGNetworkingUITests;
 			sourceTree = "<group>";
 		};
+		A6FB7A201D61C87B00042CC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB7A211D61C97500042CC0 /* MGNetworkConst.swift */,
+				A6FBA8661D61E69B00C8254C /* MGNetworkUrl.swift */,
+				A6FBA8681D61E6D600C8254C /* MGNetworkItem.swift */,
+				A6C68FDB1D629AB900100D3E /* MGNetworkHandler.swift */,
+				A6C68FDD1D62AA4200100D3E /* MGNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB7A171D61C70B00042CC0 /* Build configuration list for PBXNativeTarget "MGNetworking" */;
 			buildPhases = (
+				53C28DBD514F7B7874A7A5CD /* [CP] Check Pods Manifest.lock */,
 				A6FB79EB1D61C70A00042CC0 /* Sources */,
 				A6FB79EC1D61C70A00042CC0 /* Frameworks */,
 				A6FB79ED1D61C70A00042CC0 /* Resources */,
+				A33D2F65DC9ED9DD4F4145A0 /* [CP] Embed Pods Frameworks */,
+				C34774D27C8E9EF473A06D3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +307,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53C28DBD514F7B7874A7A5CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A33D2F65DC9ED9DD4F4145A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGNetworking/Pods-MGNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34774D27C8E9EF473A06D3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGNetworking/Pods-MGNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6FB79EB1D61C70A00042CC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A6FB79F51D61C70A00042CC0 /* ViewController.swift in Sources */,
+				A6C68FDC1D629AB900100D3E /* MGNetworkHandler.swift in Sources */,
+				A6C68FDE1D62AA4200100D3E /* MGNetworkManager.swift in Sources */,
 				A6FB79F31D61C70A00042CC0 /* AppDelegate.swift in Sources */,
+				A6FBA8691D61E6D600C8254C /* MGNetworkItem.swift in Sources */,
+				A6FBA8671D61E69B00C8254C /* MGNetworkUrl.swift in Sources */,
+				A6FB7A221D61C97500042CC0 /* MGNetworkConst.swift in Sources */,
+				A6FBA86B1D61F6C000C8254C /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +509,7 @@
 		};
 		A6FB7A181D61C70B00042CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78C72E8DA41A60FF2183A46 /* Pods-MGNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MGNetworking/Info.plist;
@@ -413,6 +521,7 @@
 		};
 		A6FB7A191D61C70B00042CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA5BFA1C2234F66F569B149 /* Pods-MGNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MGNetworking/Info.plist;
@@ -487,6 +596,7 @@
 				A6FB7A191D61C70B00042CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6FB7A1A1D61C70B00042CC0 /* Build configuration list for PBXNativeTarget "MGNetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +605,7 @@
 				A6FB7A1C1D61C70B00042CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6FB7A1D1D61C70B00042CC0 /* Build configuration list for PBXNativeTarget "MGNetworkingUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +614,7 @@
 				A6FB7A1F1D61C70B00042CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

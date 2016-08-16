@@ -8,6 +8,5 @@
 
 import UIKit
 
-class MGNetworkUrl: NSObject {
-
-}
+/// 服务器地址
+let BASE_URL = "http://v.juhe.cn/"

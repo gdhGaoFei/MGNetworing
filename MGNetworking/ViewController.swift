@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        NetworkAPI.loadTouTiaoInfo("junshi", success: { (JSON) in
+            
+            print(JSON)
+            
+            }) { (error) in
+                
+                print("错误是----- \(error)------")
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
