@@ -90,9 +90,8 @@ class MGNetworkItem: NSObject {
     
 //---------------- //功能待完善，勿用\\----------------------------\\
     //关于文件上传的方法
-    //fileURL实例:let fileURL = NSBundle.mainBundle().URLForResource("Default",withExtension: "png")
-    func upload(type:MGAsiNetWorkType,
-                URLString:String,
+     //fileURL实例:let fileURL = NSBundle.mainBundle().URLForResource("Default",withExtension: "png")
+    func upload(URLString:String,
                 fileURL:NSURL,
                 delegate:MGNetworkDelegate?,
                 block:MGNetworkUploadClosureBlock?,

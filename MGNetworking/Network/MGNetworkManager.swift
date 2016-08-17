@@ -148,5 +148,28 @@ class MGNetworkManager: NSObject {
         
         MGNetworkManager.postReqeustWithSharing(url, params: paramsDict, delegate: delegate, successBlock: nil, failureBlock: nil, showHUD: showHUD)
     }
+    
+    
+    /**
+     *  上传文件
+     *
+     *  url          上传文件的 url 地址
+     *   //fileURL实例:let fileURL = NSBundle.mainBundle().URLForResource("Default",withExtension: "png")
+     *  successBlock 成功
+     *  failureBlock 失败
+     */
+    class func uploadFileWithURL(url:String,
+                                 fileURL:NSURL,
+                                 uploadBlock:MGNetworkUploadClosureBlock?,
+                                 successBlock:MGNetworkSuccessBlock?,
+                                 failureBlock:MGNetworkFailureBlock){
 
+        let item = MGNetworkItem()
+        
+        item.upload(url, fileURL: fileURL, delegate: nil, block: uploadBlock, successBlock: successBlock, failureBlock: failureBlock)
+        
+    }
+                                 
+    
+    
 }
